@@ -12,7 +12,6 @@ import (
 // }
 
 func HelloWithName(name string, lang string) string {
-
 	if name == "" {
 		name = "world"
 	}
@@ -25,7 +24,6 @@ func HelloWithName(name string, lang string) string {
 }
 
 func GetLanguagePrefix(lang string) (prefix string) {
-
 	var defaultHelloPrefix string
 	switch lang {
 	case "Spanish":
@@ -37,7 +35,6 @@ func GetLanguagePrefix(lang string) (prefix string) {
 	}
 
 	return defaultHelloPrefix
-
 }
 
 func main() {
@@ -45,4 +42,5 @@ func main() {
 	// fmt.Println(Hello())
 	fmt.Println(HelloWithName("fernanda", "Spanish"))
 	fmt.Println(HelloWithName("fernanda", "English"))
+	// Mocking.Countdown(os.Stdout)
 }
